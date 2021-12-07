@@ -1,5 +1,10 @@
 # docker_ngx_small_light
-最低限の設定だけ乗っけているので自己責任で使って下さい。ローカルでの動作は確認済みです。本番で使う方法が分かる方のプルリクお待ちしてます！！！！！！
+最低限の設定だけ乗っけているので自己責任で使って下さい。ローカルでの動作は確認済みです。
+~~本番で使う方法が分かる方のプルリクお待ちしてます！！！！！！~~
+
+とりあえず本番でも動くようになりました！！
+
+ty @kaaaaaaaaaaai
 
 ## 利用方法
 
@@ -21,11 +26,11 @@ git clone https://github.com/ookam/docker_ngx_small_light.git
 ```bash
 cd /usr/local/docker_ngx_small_light
 docker build -t docker_ngx_small_light .
-docker run docker_ngx_small_light
+docker run --restart=always -d -p 80:80 docker_ngx_small_light
 ```
 
 ### その他
-とりあえずこれで動くはずですが**動きません** ローカルなら動きます。Dockerよく分からん
+とりあえずこれで動きます。サーバー再起動しても動きます。現状ではどのドメインでも動いてしまうので設定の追加などは自身で行って下さい。
 
 # 使い方
 細かいパラメータの指定方法は本家を見て下さい
