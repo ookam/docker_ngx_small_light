@@ -15,6 +15,7 @@ ty @kaaaaaaaaaaai
 永続化出来るように注意して下さい
 
 `echo export DOMAIN=****.com >> /etc/profile`
+`source /etc/profile`
 
 ### 3. git clone
 ```bash
