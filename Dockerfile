@@ -40,5 +40,7 @@ RUN cd /tmp && \
     make modules && \
     cp objs/ngx_http_small_light_module.so /etc/nginx/
 
-CMD ['/usr/sbin/nginx', '-g', '"daemon off;"', '-c', '/etc/nginx/nginx.conf']
+# 追記↓これがあると一生エラーになる問題が発生したのでコメントアウト
+# 正直理由はよく分かっていないのでわかる人いたら教えてください
+# CMD ['/usr/sbin/nginx', '-g', '"daemon off;"', '-c', '/etc/nginx/nginx.conf']
 # /usr/sbin/nginx -g "daemon off;" -c /etc/nginx/nginx.conf
